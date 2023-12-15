@@ -49,7 +49,7 @@ echo "version-string=$version_string" >> "$output_file"
 
 
 # Get the sha-256 hash of the contents
-git worktree add -f worktree_sha256
+git worktree add -f worktree_sha256 HEAD
 # Need to remove .git file to get correct hash
 rm worktree_sha256/.git
 sha256=$(nix hash path worktree_sha256)
