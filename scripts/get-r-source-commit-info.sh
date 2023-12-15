@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
+set -e
+
 # GitHub repo info
 owner="wch"
 repo="r-source"
 ref="trunk"
 
-repodir="_r-source"
+script_dir=$(dirname $(realpath "$0"))
+output_dir=$(realpath "$script_dir/../")
 
-output_file="$PWD/r-source-commit-info.txt"
+# Directory containing the r-source repo
+repodir="${script_dir}/_r-source"
 
-set -ex
+output_file="${output_dir}/r-source-commit-info.txt"
+
 
 # ==============================================================================
 # Clone repo if necessary, and update to latest commit
@@ -53,3 +58,6 @@ echo "sha256=$sha256" >> "$output_file"
 # worktrees.
 git worktree prune
 rm -rf worktree_sha256
+
+echo "r-source commit info written to $output_file"
+echo
