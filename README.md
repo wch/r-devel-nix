@@ -36,3 +36,14 @@ Or you can start a shell with R-devel available:
 nix shell github:wch/r-devel-nix
 R
 ```
+
+
+## Updating hashes
+
+To update the hashes for r-source and the recommended packages, run:
+
+```
+scripts/update-all.sh
+```
+
+If there were any changes, you can commit them to the repository.
