@@ -203,6 +203,7 @@
               # I'm not sure where. Hopefully we can remove this in the future.
               ''
                 CFLAGS="-Wno-error -Wno-format-security"
+                CXXFLAGS="-Wno-error -Wno-format-security"
               '' + pkgs.lib.optionalString pkgs.stdenv.isDarwin ''
                 --disable-R-framework
                 --without-x
