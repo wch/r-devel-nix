@@ -1,4 +1,4 @@
-# R-devel for Nix
+R-devel for Nix
 =================
 
 This repository contains a Nix expression for building R-devel from source. If you have Nix installed on your Linux or Mac computer, it will allow you to reproducibly build an run R-devel, without requiring you to do a permanent installation of it on your system.
