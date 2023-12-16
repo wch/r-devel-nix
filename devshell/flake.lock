@@ -23,11 +23,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702706670,
-        "narHash": "sha256-8LRKMYK62UqNwAHR+EDQp2Ig70ceBeDwOQNOiw9arvE=",
+        "lastModified": 1702749786,
+        "narHash": "sha256-a1Hr6VIW4fyri6ir+emtejpqNG3rLksxHP2EwzXLGCo=",
         "owner": "wch",
         "repo": "r-devel-nix",
-        "rev": "bc99466a3fd9516ca969e08e6cc92097c6976e42",
+        "rev": "7d9c9fa1b54e90e7b36964bf737e2a40b2a7a7ff",
         "type": "github"
       },
       "original": {
