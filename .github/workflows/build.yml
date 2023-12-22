@@ -1,4 +1,4 @@
-name: Build and test webR
+name: Build Nix package
 
 on:
   push:
